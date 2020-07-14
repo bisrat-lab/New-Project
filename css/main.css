@@ -20677,7 +20677,7 @@ h4.margin {
 
 .shortcode-team-slider .menu_item {
   color: #1f2732;
-  /* cursor: pointer; */
+  cursor: default;
   display: block;
   font-size: 54px;
   font-weight: 500;
