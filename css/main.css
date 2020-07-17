@@ -1540,6 +1540,13 @@ progressbar*/
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }
+.h:hover {
+  color: #FF487C;
+  
+}
+.h {
+  cursor: default;
+}
 
 @-webkit-keyframes fadeOut {
   0% {
