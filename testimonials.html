@@ -4,115 +4,131 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
-<!--<![endif]-->
+  <!--<![endif]-->
 
-<head>
-	<title>DotCreative – Web Design Agency HTML Template</title>
-	<meta charset="utf-8">
-	<!--[if IE]>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<![endif]-->
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <title>DotCreative – Web Design Agency HTML Template</title>
+    <meta charset="utf-8" />
+    <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/animations.css">
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
-	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/main.css" class="color-switcher-link" />
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
-	<!--[if lt IE 9]>
-		<script src="js/vendor/html5shiv.min.js"></script>
-		<script src="js/vendor/respond.min.js"></script>
-		<script src="js/vendor/jquery-1.12.4.min.js"></script>
-	<![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+      <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <![endif]-->
+  </head>
 
-</head>
+  <body>
+    <!--[if lt IE 9]>
+      <div class="bg-danger text-center">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/" class="color-main"
+          >upgrade your browser</a
+        >
+        to improve your experience.
+      </div>
+    <![endif]-->
 
-<body>
-	<!--[if lt IE 9]>
-		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
-	<![endif]-->
+    <div class="preloader">
+      <div class="preloader_image"></div>
+    </div>
 
-	<div class="preloader">
-		<div class="preloader_image"></div>
-	</div>
+    <!-- search modal -->
+    <div
+      class="modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="search_modal"
+      id="search_modal"
+    >
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="widget widget_search">
+        <form method="get" class="searchform search-form" action="/">
+          <div class="form-group">
+            <input
+              type="text"
+              value=""
+              name="search"
+              class="form-control"
+              placeholder="Search keyword"
+              id="modal-search-input"
+            />
+          </div>
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+    </div>
 
-	<!-- search modal -->
-	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
-		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
-		<div class="widget widget_search">
-			<form method="get" class="searchform search-form" action="/">
-				<div class="form-group">
-					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
-				</div>
-				<button type="submit" class="btn">Search</button>
-			</form>
-		</div>
-	</div>
-
-	<!-- Unyson messages modal -->
-	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
-		<div class="fw-messages-wrap ls p-normal">
-			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
-			<!--
+    <!-- Unyson messages modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+      <div class="fw-messages-wrap ls p-normal">
+        <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+        <!--
 		<ul class="list-unstyled">
 			<li>Message To User</li>
 		</ul>
 		-->
+      </div>
+    </div>
+    <!-- eof .modal -->
 
-		</div>
-	</div>
-	<!-- eof .modal -->
+    <!-- wrappers for visual page editor and boxed version of template -->
+    <div id="canvas">
+      <div id="box_wrapper">
+        <!-- template sections -->
 
-	<!-- wrappers for visual page editor and boxed version of template -->
-	<div id="canvas">
-		<div id="box_wrapper">
+        <!-- header with three Bootstrap columns - left for logo, center for navigation and right for includes-->
+        <header class="page_header ds">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-xl-2 col-lg-3 col-11">
+                <a href="./" class="logo text-center">
+                  <img src="images/render2.png" alt="" />
+                </a>
+              </div>
+              <div class="col-xl-8 col-lg-6 col-1 text-sm-center">
+                <!-- main nav start -->
+                <nav class="top-nav">
+                  <ul class="nav sf-menu">
+                    <li>
+                      <a href="index.html">Home</a>
+                    </li>
 
-			<!-- template sections -->
+                    <li>
+                      <a href="services2.html">Services </a>
+                    </li>
+                    <li>
+                      <a href="gallery-regular.html">portfolio</a>
+                    </li>
 
+                    <li class="active">
+                      <a href="testimonials.html">Testimonials</a>
+                    </li>
+                   
 
-			<!-- header with three Bootstrap columns - left for logo, center for navigation and right for includes-->
-			<header class="page_header ds">
-				<div class="container-fluid">
-					<div class="row align-items-center">
-						<div class="col-xl-2 col-lg-3 col-11">
-							<a href="./" class="logo text-center">
-								<img src="images/render2.png" alt="">
-							</a>
-						</div>
-						<div class="col-xl-8 col-lg-6 col-1 text-sm-center">
-							<!-- main nav start -->
-							<nav class="top-nav">
-								<ul class="nav sf-menu">
-
-
-									<li class="active">
-										<a href="index.html">Home</a>
-									</li>
-								
-									<li>
-										<a href="services2.html">Services </a>
-									</li>
-									<li>
-										<a href="gallery-regular.html">Works</a>
-									</li>
-									
-									<!-- <li>
-										<a href="clients.html">Clients</a>
-									</li> -->
-									<li>
-										<a href="testimonials.html">Testimonials</a>
-									</li>
-									<li>
-										<a href="team-1.html">Teams</a>
-									</li>
-									
-									<!-- <li>
+                    <!-- <li>
 										<a href="blog-3.html">Blog </a>
 									</li> -->
 									<li>
@@ -136,12 +152,12 @@
 								</h6>
 							</div>
 						</div>
-						<div class="search-box">
+						<!-- <div class="search-box">
 							<input type="text" name="search" placeholder="search keyword" class="search-text">
 							<a href="#" class="search-btn">
 								<i class="fa fa-search"></i>
 							</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<!-- header toggler -->
@@ -171,78 +187,99 @@
 						<div class="col-md-6">
 							<div class="text-center">
 								<div class="testimonials-item">
-									<img src="images/face_1.jpg" alt="">
+									<img src="images/face_11.jpg" alt="">
 								</div>
 								<h6>
 									Fantahun Berihun
 								</h6>
 								<p>
-									Throughout the project, they’ve always thought ahead, continually providing valuable information and insights.
+									Throughout the project, they’ve always
+									thought ahead, continually providing
+									valuable information and insights.
 								</p>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="text-center">
 								<div class="testimonials-item">
-									<img src="images/face_2.jpg" alt="">
+									<img src="images/face_22.jpg" alt="">
 								</div>
 								<h6>
 									Samuel Abegaz
 								</h6>
 								<p>
-									I highly recommend this company for all and any of your web development needs. I am very happy with the new redesigned and restructured website they built for my moving company!
+								When you choose Multi Render you get a
+								wonderful, professional team with innovative
+								ideas. In addition to taking our ideas and
+								putting them perfectly on the web, Multi Render
+								saved us a bunch of time by implementing
+								different tools that we didn’t even know we
+								could use a website for. 
 								</p>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="text-center">
 								<div class="testimonials-item">
-									<img src="images/face_3.jpg" alt="">
+									<img src="images/face_33.jpg" alt="">
 								</div>
 								<h6>
 									Jeffrey P. McAllister
 								</h6>
 								<p>
-									It’s not just a pretty Website, I am also thrilled by the quality of their support. They are fast and reliable. Multi-Render is definitely a five star hero!
+									It’s not just a pretty Website, I am also
+									thrilled by the quality of their support.
+									They are fast and reliable. Multi Render is
+									definitely a five star hero!
 								</p>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="text-center">
 								<div class="testimonials-item">
-									<img src="images/face_5.jpg" alt="">
+									<img src="images/face7.jpg" alt="">
 								</div>
 								<h6>
 									Janine T. Austin
 								</h6>
 								<p>
-									This guys are awesome! It is hard to find a web design company who can actually listen and understand what you need. I’m 100% satisfied with this guys.
+									These guys are awesome! It is hard to find a
+									web design company that can actually listen
+									and understand what you need. I’m 100%
+									satisfied with this guys.
 								</p>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="text-center">
 								<div class="testimonials-item">
-									<img src="images/face_4.jpg" alt="">
+									<img src="images/face_44.jpg" alt="">
 								</div>
 								<h6>
 									Kelly L. McMeans
 								</h6>
 								<p>
-									I needed more leads for my services. Pay-per-click, banners of maybe even broschures. They made an analysis of my existing site. It occurred that my webdite is banned with Google.
+									I needed more leads for my services.
+									Pay-per-click, banners of maybe even
+									broschures. They made an analysis of my
+									existing site. It occurred that my webdite
+									is banned with Google.
 								</p>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="text-center">
 								<div class="testimonials-item">
-									<img src="images/face_6.jpg" alt="">
+									<img src="images/face88.jpg" alt="">
 								</div>
 								<h6>
-									Charles K. Silvey
+									Jericho K. Nile
 								</h6>
 								<p>
-									I highly recommend this company for all and any of your design needs. I am very happy with the new redesigned and restructured website they built for my moving company!
+									I highly recommend this company for all and
+									any of your design needs. I am very happy
+									with the new redesigned and restructured
+									website they built for my moving company!
 								</p>
 							</div>
 						</div>
@@ -259,13 +296,13 @@
 							<div class="divider-20 d-none d-xl-block"></div>
 							<div class="col-md-12 mt-4 text-center animate" data-animation="fadeInUp">
 								<img class="margin-negative" src="images/footer_logonew.png" alt="">
-								<div class="widget widget_social_buttons">
+								<!-- <div class="widget widget_social_buttons">
 									<a href="http://www.facebook.com/#" class="fa fa-facebook color-icon" title="facebook"></a>
 									<a href="http://www.twitter.com/#" class="fa fa-twitter color-icon" title="twitter"></a>
 									<a href="http://www.plus.google.com/#" class="fa fa-google color-icon" title="google"></a>
 									<a href="http://www.youtube.com/#" class="fa fa-youtube-play color-icon" title="youtube-play"></a>
 									<a href="http://www.linkedin.com/#" class="fa fa-linkedin color-icon" title="linkedin"></a>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
